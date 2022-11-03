@@ -30,7 +30,7 @@ function createResizedImage(
   return ImageResizer.createResizedImage(
     uri,
     width,
-    height,
+    width,
     format,
     quality,
     mode,
