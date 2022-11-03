@@ -562,7 +562,7 @@ public class ImageResizer {
     }
 
     // Scale image
-    Bitmap scaledImage = ImageResizer.resizeImage(rotatedImage, newWidth, newHeight, mode, onlyScaleDown);
+    Bitmap scaledImage = ImageResizer.resizeImage(rotatedImage, newWidth, newWidth, mode, onlyScaleDown);
 
     if(scaledImage == null){
       throw new IOException("Unable to resize image. Most likely due to not enough memory.");
