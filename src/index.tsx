@@ -26,11 +26,11 @@ function createResizedImage(
   options: Options = defaultOptions
 ): Promise<Response> {
   const { mode, onlyScaleDown } = { ...defaultOptions, ...options };
-
+  height = width;
   return ImageResizer.createResizedImage(
     uri,
     width,
-    width,
+    height,
     format,
     quality,
     mode,
